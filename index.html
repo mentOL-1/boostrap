@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Подключение стилей Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Литературный кризис XXI века</title>
+</head>
+
+<body>
+    <!-- НАВИГАЦИОННАЯ ПАНЕЛЬ -->
+    <nav class="navbar navbar-expand navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./">Литература XXI века</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Ссылки навигации -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <!-- Выпадающее меню -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        Статьи
+                    </a>
+                    <!-- Опции выпадающего меню -->
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Критика</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Аналитика</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Поле поиска -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Поиск по сайту" />
+                <button class="btn btn-primary" type="submit">Искать</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- СТАТЬЯ -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Колонка с именем автора -->
+            <div class="col-sm-2">Автор: Ольга Петошина</div>
+            <!-- Колонка с содержимым статьи -->
+            <div class="col-sm-8">
+                <h2>Литературный кризис XXI века</h2>
+                <h5>Создано 1 марта 2025 года</h5>
+                <!-- Текст статьи -->
+                <p>
+                    Литература всегда была зеркалом общества, отражая его духовные и культурные ценности. Однако
+                    в XXI веке мы наблюдаем заметный спад интереса к традиционной литературе. Причины этого кризиса
+                    кроются в ряде факторов: стремительное развитие технологий, сокращение внимания к чтению и
+                    засилье цифровых развлечений.
+                </p>
+                <p>
+                    Современные авторы сталкиваются с новой реальностью, где книги все чаще уступают место социальным
+                    сетям, фильмам и видеоиграм. Заметно снизился спрос на сложные литературные произведения,
+                    требующие глубокого анализа и размышлений. Вместо этого популярность приобретают легкие и
+                    развлекательные книги, которые не требуют значительных умственных усилий.
+                </p>
+                <p>
+                    Несмотря на это, литература продолжает искать новые формы выражения. Электронные книги,
+                    аудиокниги и интерактивные проекты становятся инструментами, которые могут привлечь внимание
+                    новых поколений. Возможно, именно в этих инновациях кроется ключ к преодолению кризиса.
+                </p>
+            </div>
+        </div>
+
+        <!-- ФОРМА -->
+        <form class="was-validated">
+            <!-- Поле ввода email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Адрес электронной почты:</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите ваш email" required />
+                <div class="valid-feedback">Email валиден</div>
+                <div class="invalid-feedback">Пожалуйста, заполните это поле.</div>
+            </div>
+            <!-- Поле ввода пароля -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Пароль:</label>
+                <input type="password" class="form-control" id="password" placeholder="Введите ваш пароль" minlength="8"
+                    required />
+                <div class="form-text" id="password-help-block">Пароль должен содержать не менее 8 символов.</div>
+                <div class="valid-feedback">Пароль валиден.</div>
+                <div class="invalid-feedback">Пожалуйста, заполните это поле.</div>
+            </div>
+            <!-- Чекбокс -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="checkbox" required />
+                <label class="form-check-label" for="checkbox">Согласен с условиями использования</label>
+                <div class="valid-feedback">Вы согласились с условиями.</div>
+                <div class="invalid-feedback">Необходимо согласиться для продолжения.</div>
+            </div>
+            <!-- Кнопка отправки -->
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
